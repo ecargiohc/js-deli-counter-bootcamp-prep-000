@@ -2,12 +2,14 @@ function takeANumber(katzDeliLine, person) {
   katzDeliLine.push(person); 
 return (`Welcome, ${person}. You are number ${katzDeliLine.length} in line.`) 
 }
-
+var counter = 0;
 function takeANumber(katzDeliLine) {
-  
+  counter++;
+  katzDeliLine.push(counter);
+    
   
     katzDeliLine.shift()
-  return (`Welcome, you are ticket number ${}`)
+  return (`Welcome, you are ticket number ${counter}`)
 }
 function nowServing(katzDeliLine) {
   var firstInLine = katzDeliLine[0] 
