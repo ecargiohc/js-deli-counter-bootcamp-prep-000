@@ -8,6 +8,8 @@ function takeANumber(katzDeliLine) {
   katzDeliLine.push(counter);
   return (`Welcome, you are ticket number ${counter}`)
 }
+
+
 function nowServing(katzDeliLine) {
   var firstInLine = katzDeliLine[0] 
   if (katzDeliLine.length > 0) { 
